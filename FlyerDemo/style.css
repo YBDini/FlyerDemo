@@ -1,0 +1,350 @@
+:root{
+    --dark-text: #331E38;
+    --light-text: #FCFCFC;
+    --pink: #EE82B0;
+    --blue: #91C3CB;
+    --yellow: #f0c907;
+}
+
+/*STANDARD*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 70%;
+    scroll-behavior: smooth;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+    /*PC*/
+@media (max-width: 75em){
+    html{
+        font-size: 60%;
+    }
+}
+    /*TABLET*/
+@media (max-width: 61.25em){
+    html{
+        font-size: 58%;
+    }
+}
+    /*MOBILE*/
+@media (max-width: 28.75em){
+    html{
+        font-size: 55%;
+    }
+}
+
+body{
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--dark-text);
+    background-color: var(--light-text);
+}
+
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 4.2rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+img{
+    display: block;
+    width: 100%;
+}
+/*STANDARD*/
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-text);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left div, .right div{
+    margin-bottom: .75em;
+}
+
+.left{
+    width: 65%;
+    padding: .75em;
+}
+
+.one{
+    background-color: var(--pink);
+    width: 100%;
+    height: 55rem;
+    background-image: url("./New folder/hand.png");
+    background-repeat: no-repeat;
+    background-attachment:local;  
+    background-size:cover;
+    position: relative;
+    border-radius: 10% 0 0 0;
+}
+
+.one>p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-style: italic;
+    color: var(--light-text);
+    opacity: .7;
+}
+
+.go{
+    background-color: var(--light-text);
+    padding: 0 1rem;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: var(--blue);
+}
+
+.go>span{
+    font-size: 6rem;
+}
+
+.two{
+    background-color: var(--yellow);
+    width: 100%;
+    height:max-content;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 0% 0% 0% 10%;
+    color: var(--dark-text);
+}
+
+.left-yellow{
+    position: relative;
+    width: 35%;
+    font-size: 4rem;
+    padding-top: 1rem;
+    text-align: right;
+    text-transform: uppercase;
+}
+.left-yellow>p>span{
+    font-weight: 800;
+}
+
+.divider{
+    background-color: var(--dark-text);
+    width: 1%;
+    height: 20rem;
+}
+
+.right-yellow{
+    font-size: 1.5rem;
+    position: relative;
+    width: 55%;
+}
+
+.three{
+    background-color: var(--dark-text);
+    width: 100%;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    color: var(--light-text);
+    letter-spacing: 1px;
+    border-radius: 10% 0 10% 10%;
+}
+.three>.fontawe{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.fontawe>i{
+    font-size: 5rem;
+}
+
+.fontawe>i>p{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: -1rem;
+    padding: 1rem 0;
+}
+
+.contact{
+    width: 100%;
+    padding: 2rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    font-size: 3rem;
+}
+.contact>p{
+    font-size: 1.5rem;
+}
+.contact>.circle{
+    background-color: var(--light-text);
+    border: 2px solid var(--dark-text);
+    border-radius: 50%;
+}
+.circle>i{
+    padding: 1rem;
+    color: var(--pink);
+}
+
+.right{
+    width: 35%;
+    padding: .75em;
+}
+
+.five{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    font-weight: 400;
+}
+
+.five>.logo{
+    width: 90%;
+    background-color: var(--pink);
+    align-self:flex-start;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--light-text);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.worry{
+    font-size: 5rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+    
+}
+.pink-br{
+    width: 50%;
+    height: .5rem;
+    align-self: flex-start;
+    background-color: var(--pink);
+}
+
+.six{
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    font-weight: 400;
+    color: var(--light-text);
+    padding: 3rem;
+    border-radius: 0 0% 5% 0;
+}
+
+.six>.book{
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 5rem;
+}
+
+.six>.blue-div{
+    width: 30%;
+    height: 0.5rem;
+    background-color: var(--light-text);
+}
+
+.phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.seven{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+}
+
+.seven>.large-text{
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.clear-div{
+    width: 30%;
+    height: .5rem;
+    background-color: var(--dark-text);
+    align-self: flex-start;
+}
+
+.seven>.small-text{
+    font-size: 2rem;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow);
+    text-align: center;
+    font-size: 2.5rem;
+    border-radius: 10% 10% 0 0;
+    height: 5rem;
+}
